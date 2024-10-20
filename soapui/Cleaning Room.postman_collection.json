@@ -1,0 +1,38 @@
+{
+	"info": {
+		"_postman_id": "00f5f4ac-468b-43e9-8df2-0ff031f83da2",
+		"name": "Cleaning Room",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Clean Room API",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n                \"room\": [5, 5],\r\n                \"coords\": [1, 2],\r\n                \"patches\": [[1, 0], [2, 2], [2, 3]],\r\n                \"instructions\": \"NNESEESWNWW\"\r\n            }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/cleanRoom",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"cleanRoom"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
